@@ -1,0 +1,33 @@
+{
+  "name": "csvfactory",
+  "version": "0.0.9",
+  "description": "This pacakge is for creating profile files for twitter.",
+  "main": "client.js",
+  "bin": {
+    "csvfactory": "client.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvanscher/csvfactory.git"
+  },
+  "keywords": [
+    "csv",
+    "json",
+    "convert",
+    "conversion",
+    "parse"
+  ],
+  "author": "yvanscher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yvanscher/csvfactory/issues"
+  },
+  "homepage": "https://github.com/yvanscher/csvfactory#readme",
+  "dependencies": {
+    "fast-csv": "^0.6.0",
+    "minimist": "^1.1.1"
+  }
+}

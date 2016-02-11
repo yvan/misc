@@ -1,0 +1,23 @@
+ #$Manual
+ #$
+ #$Name	
+ #$	man -- Displays information on specified shell command.  
+ #$
+ #$Usage
+ #$	man command
+ #$
+ #$Arguments
+ #$	command	Shell command. Currently accepted: conv, config, dl, link, man
+ #$
+ #$Details
+ #$	
+ #$
+ #$Options
+ #$	
+ #$
+ #$Examples
+ #$	man conv
+ #$	man man
+ #$
+ #$Copyright
+ #$	2012 Anaphora LLC.

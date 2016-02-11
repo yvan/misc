@@ -1,0 +1,24 @@
+ #$ File Conversion
+ #$
+ #$ Name
+ #$	conv -- Converts files between different data formats. 
+ #$
+ #$ Usage
+ #$	conv format.out file
+ #$
+ #$ Arguments
+ #$	format.out 	Output format. Currently accepted: csv, ts, txt, xls. 
+ #$
+ #$	file		Output file name, suffix inclusive. 	
+ #$
+ #$ Details
+ #$	
+ #$
+ #$ Options
+ #$	
+ #$
+ #$ Examples
+ #$	conv csv data.xls
+ #$
+ #$ Copyright
+ #$	2012 Anaphora LLC.

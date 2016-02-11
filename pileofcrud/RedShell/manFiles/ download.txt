@@ -1,0 +1,29 @@
+ #$Download
+ #$
+ #$Name
+ #$	dl -- Retrieves data on specified symbol. 
+ #$
+ #$Usage
+ #$	dl symbol scale range file
+ #$
+ #$Arguments
+ #$	symbol	Ticker symbol
+ #$
+ #$	scale	Desired timescale. Formatted in either minutes or days.  
+ #$
+ #$	range	Desired range for historical data. Start|Stop, format MMDDYYYY.
+ #$
+ #$	file	Target file for data. Default is download path, if configured. 
+ #$
+ #$Details
+ #$	
+ #$
+ #$Options
+ #$	
+ #$
+ #$Examples
+ #$	dl AAPL 1m 102412|102412 /Directory
+ #$	dl TPLM 1d 102412|010112 
+ #$
+ #$Copyright
+ #$	2012 Anaphora LLC.

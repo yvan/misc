@@ -1,0 +1,10 @@
+{
+	"manifest_version": 2,
+	"name" : "pixelink",
+	"description": "plugin that breaks any web page the client visits, the idea is to incentivize people to use noscript to protect their web pages from actually malicious people",
+	"version": "0.1",
+    "content_scripts": [ {
+    	"js": [ "jquery.min.js", "content.js" ],
+    	"matches": [ "<all_urls>" ]
+  	}]
+}

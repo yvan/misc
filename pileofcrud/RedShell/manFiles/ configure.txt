@@ -1,0 +1,34 @@
+ #$Configure
+ #$
+ #$Name
+ #$	config -- control GUI and directory parameters. 
+ #$
+ #$Usage
+ #$	config color color
+ #$	config font font
+ #$	config path directory
+ #$	config background style
+ #$
+ #$Arguments
+ #$	color	
+ #$
+ #$	font
+ #$
+ #$	directory
+ #$
+ #$	style
+ #$
+ #$Details
+ #$	
+ #$
+ #$Options
+ #$	
+ #$
+ #$Examples
+ #$	config color brown
+ #$	config font Courier
+ #$	config path /Users/Username/Folder
+ #$	config background checkered
+ #$
+ #$Copyright
+ #$	2012 Anaphora LLC. 
