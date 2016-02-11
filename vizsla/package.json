@@ -1,0 +1,20 @@
+{
+  "name": "vizsla",
+  "authors": "yvanscher and caseyslaught",
+  "version": "0.0.1",
+  "description": "load in terrain data, economic data, populations data",
+  "main": "terraindata.js",
+  "dependencies": {
+    "request": "latest",
+    "geode": "latest",
+    "async": "latest",
+    "limiter": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yvanscher/vizsla.git"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.10"
+  }
+}

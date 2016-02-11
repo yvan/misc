@@ -1,0 +1,44 @@
+{
+    "10": {
+        "lowestPL": 0,
+        "highestPL": 23.5853,
+        "lowestLAT": 0,
+        "highestLAT": 455.03
+    },
+    "11": {
+        "lowestPL": 0,
+        "highestPL": 20.9725,
+        "lowestLAT": 0,
+        "highestLAT": 465.678
+    },
+    "12": {
+        "lowestPL": 0,
+        "highestPL": 26.1488,
+        "lowestLAT": 0,
+        "highestLAT": 392.161
+    },
+    "13": {
+        "lowestPL": 0,
+        "highestPL": 10.2846,
+        "lowestLAT": 0,
+        "highestLAT": 387.982
+    },
+    "14": {
+        "lowestPL": 0,
+        "highestPL": 11.7312,
+        "lowestLAT": 0,
+        "highestLAT": 240.653
+    },
+    "08": {
+        "lowestPL": 0,
+        "highestPL": 0,
+        "lowestLAT": 0,
+        "highestLAT": 0
+    },
+    "09": {
+        "lowestPL": 0,
+        "highestPL": 17.0014,
+        "lowestLAT": 0,
+        "highestLAT": 417.669
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "10": {
+        "lowestDL": 0,
+        "highestDL": 36980.7,
+        "lowestUP": 0,
+        "highestUP": 20690
+    },
+    "11": {
+        "lowestDL": 0,
+        "highestDL": 44600.3,
+        "lowestUP": 0,
+        "highestUP": 27808.1
+    },
+    "12": {
+        "lowestDL": 0,
+        "highestDL": 50898.3,
+        "lowestUP": 0,
+        "highestUP": 39401.5
+    },
+    "13": {
+        "lowestDL": 0,
+        "highestDL": 71561.5,
+        "lowestUP": 0,
+        "highestUP": 59391.5
+    },
+    "14": {
+        "lowestDL": 0,
+        "highestDL": 100270,
+        "lowestUP": 0,
+        "highestUP": 92062.7
+    },
+    "08": {
+        "lowestDL": 0,
+        "highestDL": 29295.5,
+        "lowestUP": 0,
+        "highestUP": 18384.9
+    },
+    "09": {
+        "lowestDL": 0,
+        "highestDL": 30766.2,
+        "lowestUP": 0,
+        "highestUP": 21502.5
+    }
+}
