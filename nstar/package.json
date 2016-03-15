@@ -1,0 +1,34 @@
+{
+  "name": "nstar",
+  "version": "0.0.1",
+  "description": "enforce a data schema on your files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvan/nstar.git"
+  },
+  "keywords": [
+    "nstar",
+    "schema",
+    "version",
+    "control",
+    "tag",
+    "sysem"
+  ],
+  "author": "yvan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yvan/nstar/issues"
+  },
+  "homepage": "https://github.com/yvan/nstar#readme",
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "co": "^4.6.0"
+  },
+  "devDependencies": {
+    "mocha-generators": "^1.2.0"
+  }
+}
