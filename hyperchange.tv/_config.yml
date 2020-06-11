@@ -1,0 +1,27 @@
+# Plugins
+gems:             ['jekyll-paginate', 'jekyll-gist', 'jekyll-github-metadata']
+
+# Dependencies
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            hyperchange
+tagline:          hyperchange - a massive societal shift driven by the advent of 
+description:      "hyperchange is an educational show geared towards millennials about current events in finance, economics and the stock market. This is Episode 3 - Tesla Is Changing The World."
+url:              https://hyperchange.tv
+baseurl:          /
+
+author:
+  name:           'Galileo Russell'
+  url:            https://www.youtube.com/channel/UC1LAjODfg7dnSSrrPGGPPMw
+
+paginate:         5
+
+# Custom vars
+version:          1.0.1
+
+github:
+  repo:           https://github.com/yvan/hyperchange.tv
