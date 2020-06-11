@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hyperclone: easy financial data</title>
+    <meta charset="utf-8">
+    <meta property="og:title" content="hyperclone: easy financial data">
+    <meta property="og:description" content="hyperclone is a simple way to view financial data.">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="182">
+    <meta property="og:image:height" content="202">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+
+  <body>
+    <style>
+        body {
+            padding: 25px;
+        }
+        body * {
+            margin-left: auto;
+            margin-right: auto;
+            text-align:center;
+        }
+        p {
+            font-family:  "Raleway", "HelveticaNeue-Light", Arial, sans-serif;
+            font-family: ""
+            font-size: 16px;
+        }
+        .axis text{
+          font-family: "Raleway", "HelveticaNeue-Light", Arial, sans-serif;
+          font-size: 12px;
+          text-anchor: end;
+        }
+        .axis path{
+          fill:none;
+          stroke:black;
+          stroke-width: 0.5px;
+          shape-rendering: crispEdges;
+        }
+        .toolTip{
+            padding: 15px;
+            margin: auto;
+            text-align:center;
+            height: 50px;
+        }
+    </style>
+
+    <p><img src="img/hyperchange_logo.png" alt="hyperchange" height="100" width="210"></p>
+    <p>hyperchange data is a simple way for you to view financial data</p>
+    <p>choose a company below to see its operating income and revenue</p>
+    <p>the company's revenue is in dark blue; its operating income is in light blue</p>
+    <p>if you want a company added send us a message at hyperchangetv@gmail.com</p>
+
+    <div class="company" id="cmg_annual_revenue_operating_income"><a>Chipotle $CMG</a></div>
+    <div class="company" id="tsla_annual_revenue_operating_income"><a>Telsa $TSLA</a></div>
+    <div class="company" id="shak_annual_revenue_operating_income"><a>Shake Shack $SHAK</a></div>
+    <div class="company" id="jsda_annual_revenue_operating_income"><a>Jones Soda $JSDA</a></div>
+    <div class="company" id="snap_annual_revenue_operating_income"><a>Snap $SNAP</a></div>
+    <div class="company" id="fb_annual_revenue_operating_income"><a>Facebook $FB</a></div>
+    <div class="company" id="amzn_annual_revenue_operating_income"><a>Amazon $AMZN</a></div>
+    <div class="company" id="twtr_annual_revenue_operating_income"><a>Twitter $TWTR</a></div>
+    <div class="company" id="goog_annual_revenue_operating_income"><a>Google $GOOG</a></div>
+
+    <div class="toolTip"></div>
+    <div id="svg_bind"></div>
+
+    <script type="text/javascript">
+
+    var margin = {top:100,right:100,bottom:100,left:100},
+    width=800
+    height=500
+
+    $( document ).ready(function() {
+        $( ".company" ).click(function() {
+            var clicked_company_id = $(this).attr("id")
+            $('svg').remove()
+            var dataset = ''
+            dataset = 'data/'+clicked_company_id+'.csv'
+
+            d3.csv(dataset, function(error, data){
+                if (error) throw error
+
+                data = data.map(function(d){
+                    d['revenue_mil'] = parseInt(d['revenue_mil'])
+                    d['operating_income_mil'] = parseInt(d['operating_income_mil'])
+                    return d
+                })
+                var options = d3.keys(data[0]).filter(function(key) { return key !== "year"; })
+
+                data.forEach(function(d){
+                    d.values = options.map(function(name){ return {name: name, value: +d[name]} })
+                })
+
+                var max_y = d3.max(data, function(d){ 
+                        return d3.max(d.values, function(d){return d.value})
+                })
+
+                var min_y = d3.min(data, function(d){ 
+                        return d3.min(d.values, function(d){return d.value})
+                })
+
+                max_y = Math.max(Math.abs(min_y), max_y)+50
+
+                var y = d3.scale.linear().range([height - margin.top - margin.bottom, 0])
+                var x0 = d3.scale.ordinal().rangeRoundBands([0, width - margin.right - margin.left], .1)
+                var x1 = d3.scale.ordinal()
+
+                var xAxis = d3.svg.axis().scale(x0).orient('bottom')
+                var yAxis = d3.svg.axis().scale(y).orient('left').tickFormat(d3.format("$,"))
+
+                x0.domain(data.map(function(d){return d.year}))
+                x1.domain(options).rangeRoundBands([0, x0.rangeBand()])
+                y.domain([-max_y,max_y])
+               
+                var svg = d3.select("#svg_bind").append("svg").attr("width", "50%").attr("height", "50%").attr("viewBox", "0 0 " + width + " " + height).attr("id", clicked_company_id).append("g")
+
+                svg.append("g")
+                .attr("class", "y axis")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                .call(yAxis)
+
+                svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(" + margin.left + "," + (height - margin.bottom) + ")")
+                .call(xAxis)
+
+                svg.append("g")
+                .attr("class", "x axis zero")
+                .attr("transform", "translate(" + margin.left + "," + (height - margin.bottom) + ")")
+                .call(xAxis)
+
+                svg.select(".x.axis.zero")
+                .attr("transform", "translate(100," + height/2 + ")")
+                .call(xAxis.tickFormat("").tickSize(0))
+
+                var colorRange = d3.scale.category20()
+                var color = d3.scale.ordinal()
+                    .range(colorRange.range())
+ 
+                var bar = svg.selectAll(".bar")
+                .data(data)
+                .enter().append("g")
+                .attr("class", "rect")
+                .attr("transform", function(d) { return "translate(" + x0(d.year) + ",0)"; })
+
+                bar.selectAll("rect")
+                .data(function(d) { return d.values; })
+                .enter().append("rect")
+                .attr("width", x1.rangeBand())
+                .attr("x", function(d) { return x1(d.name) + margin.right })
+                .attr("y", function(d) { return d.value < 0 ? height/2 : y(d.value)+100})
+                .attr("value", function(d){return d.name;})
+                .attr("height", function(d) { return d.value < 0 ? Math.abs(y(d.value)+100 - (height/2)) : Math.abs(y(d.value)+100 - (height/2)) })
+                .style("fill", function(d) { return color(d.name); })
+
+
+                var formatter = new Intl.NumberFormat('en-US', {
+                  style: 'currency',
+                  currency: 'USD',
+                  minimumFractionDigits: 2,
+                })
+
+                var divTooltip = d3.select(".toolTip")
+
+                bar.on("mousemove", function(d){
+                    divTooltip.style("opacity", "1")
+                    var x = d3.event.pageX, y = d3.event.pageY
+                    var elements = document.querySelectorAll(':hover')
+                    l = elements.length
+                    l = l-1
+                    elementData = elements[l].__data__
+                    divTooltip.html((d.year)+"<br>"+elementData.name+"<br>"+formatter.format(elementData.value))
+                })
+                bar.on("mouseout", function(d){
+                    divTooltip.style("opacity", "0")
+                })
+                })
+            })
+        })
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-88413746-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
