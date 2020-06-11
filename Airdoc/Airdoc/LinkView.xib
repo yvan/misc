@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LinkView">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="om5-kR-OvF"/>
+                <outlet property="linkButton" destination="G3A-he-jRA" id="Ehy-0X-Chu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xga-lj-wSc">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FbW-T1-qUO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3A-he-jRA" customClass="LinkButton">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="45"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xga-lj-wSc" secondAttribute="trailing" id="73E-rX-UsD"/>
+                <constraint firstItem="xga-lj-wSc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9lp-la-pTT"/>
+                <constraint firstItem="xga-lj-wSc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TlI-D3-0CG"/>
+                <constraint firstItem="G3A-he-jRA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U8g-U5-OSG"/>
+                <constraint firstAttribute="bottom" secondItem="G3A-he-jRA" secondAttribute="bottom" id="gUl-9x-hZO"/>
+                <constraint firstAttribute="trailing" secondItem="G3A-he-jRA" secondAttribute="trailing" id="qIF-RB-BE2"/>
+                <constraint firstItem="G3A-he-jRA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qnq-Fy-vHd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="536.5" y="0.0"/>
+        </view>
+    </objects>
+</document>
