@@ -1,0 +1,889 @@
+/***** Product Page ********/
+/*DO NOT USE: id - header CHECK IF THE ID ID BEING USED BY THE LAYOUT FILE;*/
+/*cakephp-cakephp-0a6d85c*/
+/*get rid of height 50px under #search-main, never put a height on that it covers otehr elements*/
+
+* {
+
+   font-family: Helvetica;
+}
+
+body{
+
+    background-color: #E3E3E1;
+}
+
+a {
+
+
+  text-decoration: none;
+}
+
+.username a {
+
+  color: black;
+}
+
+#ProductSearch{
+
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 60px;
+  width: 100%;
+  height: 60px; 
+}
+
+/******** MAIN PAGE *****/
+#page-main {
+
+  z-index: -1;
+  position: absolute;
+  margin-top: 130px;
+  width: 100%;
+  height: 100%;
+}
+
+/****NODE FIELD CONTAINS NODES*/
+#node-field{
+
+  width: 675px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*product specific fields***/
+
+.product-image{
+
+	position: absolute;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+	width: 260px;
+	height: 200px;
+}
+
+.product-image img {
+
+  border-top-left-radius: 3px;
+}
+
+#license-box{
+
+  position: absolute;
+  color: #353839;
+  background-color: #FCFCFC; 
+  margin-top: 40px;
+  margin-left: 750px;
+  width: 250px;
+  height: 150px;
+}
+
+#zoomin-button{
+
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #FCFCFC;
+}
+
+#zoomin{
+
+  font-family: "Cabin_Reg";
+  z-index: 2;
+  margin-top: 175px;
+  margin-left: 625px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  color: #353839;
+
+  opacity: .85;
+  filter:alpha(opacity=85);
+}
+
+#zoomin:hover{
+
+  opacity: .25;
+  filter:alpha(opacity=50);
+
+}
+
+#zoomin:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+#zoomout-button{
+
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #FCFCFC;
+}
+
+#zoomout{
+
+  font-family: "Cabin_Reg";
+  z-index: 2;
+  margin-top: 175px;
+  margin-left: 650px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  color: #353839;
+
+  opacity: .85;
+  filter:alpha(opacity=85);
+}
+
+#zoomout:hover{
+
+  opacity: .25;
+  filter:alpha(opacity=50);
+
+}
+
+#zoomout:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+#picture-nav-right{
+
+  opacity: .20;
+  filter:alpha(opacity=20);
+  z-index: 2;
+  margin-top: 75px;
+  margin-left: 225px;
+  background-image: url('../img/arrow-pic.png');
+  width: 35px;
+  height: 50px;
+  position: absolute;
+  border-radius: 3px;
+}
+
+#picture-nav-right:hover{
+
+  opacity: .50;
+  filter:alpha(opacity=50);
+}
+
+#picture-nav-right:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+#viewer-nav-right{
+
+  opacity: .20;
+  filter:alpha(opacity=20);
+  z-index: 2;
+  margin-top: 75px;
+  margin-left: 650px;
+  background-image: url('../img/arrow-pic.png');
+  width: 35px;
+  height: 50px;
+  position: absolute;
+  border-radius: 3px;
+}
+
+#viewer-nav-right:hover{
+
+  opacity: .50;
+  filter:alpha(opacity=50);
+}
+
+#viewer-nav-right:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+#product-likes{
+
+  font-family: "Lobster_Reg_1.4";
+  font-size: 20px;
+  color: #5C8A30;
+  position: absolute;
+  overflow: hidden;
+  background-color: #FCFCFC;
+  margin-top: -90px;
+  margin-left: 35px;
+  width: 115px;
+  height: 25px;
+}
+
+#product-dislikes{
+
+  font-family: "Lobster_Reg_1.4";
+  font-size: 20px;
+  color: #D0383A;
+  position: absolute;
+  overflow: hidden;
+  background-color: #FCFCFC;
+  margin-top: -60px;
+  margin-left: 35px;
+  width: 115px;
+  height: 25px;
+}
+
+#product-description{
+
+  font-family: "Cabin_Reg";
+  font-size: 15px;
+  position: absolute;
+  color: black;
+  padding: 10px;
+  width: 500px;
+  height: 310px;
+  border-bottom-left-radius: 3px;
+  background-color: #FCFCFC;
+  margin-top: 200px;
+}
+
+#product-viewerdiv{
+
+  position: absolute;
+  border-radius: 3px;
+  background-color: #FCFCFC;
+  width: 400px;
+  height: 180px;
+  margin-left: 260px;
+}
+
+.product-viewer{
+
+  position: absolute;
+  padding: 10px;
+  border-radius: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #FCFCFC;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 405px;
+  height: 180px;
+}
+
+.product-viewer-complete{
+
+  position: absolute;
+  padding: 10px;
+  border-radius: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #FCFCFC;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 405px;
+  height: 180px;
+}
+
+#product-sidebar{
+
+	position: absolute;
+	padding: 10px;
+	border-radius: 3px;
+  border-top-right-radius: 0px;
+	background-color: #FCFCFC;
+	width: 150px;
+  min-height: 310px;
+	margin-top: 200px;
+	margin-left: 515px;
+
+}
+
+#product-sidebar a {
+
+	color: black;
+}
+
+#likes-sidebar {
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+
+  width: 150px;
+  height: 25px;
+  border-radius: 3px;
+  margin-top: 95px;
+}
+
+#likes-sidebar:active{
+
+  opacity: .80;
+    filter:alpha(opacity=80);
+}
+
+#likes-sidebar img {
+
+    border-radius: 3px;
+}
+
+#download-buttons{
+
+  display: none;
+  margin-top: 285px; 
+  border-radius: 3px;
+  z-index: 2;
+  position: absolute;
+  background-color: #FFFFFF;
+}
+
+
+#add_que_button{
+
+  display: inline;
+  position: absolute;
+  background-image: url('../img/addque.png');
+  border: none;
+  margin-top: 490px;
+  margin-left: 525px;
+  width: 150px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+#add_que_button:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+#list_of_ques{
+
+  display: none;
+  background: #FFFFFF;
+  position: absolute;
+  margin-top: 535px;
+  margin-left: 525px;
+  float: left;
+  border-radius: 3px;
+  width: 160px;
+}
+
+#que-unit-close{
+
+  display: inline;
+  background-image: url('../img/close-download.png');
+  border: none;
+  float: left;
+  margin: 10px;
+  margin-left: 5px;
+  width: 150px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+#que-unit-close:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+#dlsidebar-unit{
+
+  margin: 5px;
+  border-radius: 3px;
+}
+
+#dlsidebar-unit:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+#dlsidebar-unit-close{
+
+  margin: 5px;
+  border-radius: 3px;
+  width: 150px;
+  height: 25px;
+  background-image: url('../img/close-download.png');
+}
+
+#dlsidebar-unit-close:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+
+#download-reveal{
+
+  background-image: url('../img/download.png');
+  margin-top: 30px;
+  width: 150px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+#download-reveal:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+#dlsidebar-mainbutton{
+  
+  width: 150px;
+  height: 25px;
+}
+
+#viewer-perspective-reset-button{
+
+    border: none;
+    border-radius: 3px;
+    background-color: #FCFCFC;
+}
+
+#viewer-perspective-reset-button:hover{
+
+  text-decoration: underline;
+}
+
+#viewer-perspective-reset{
+
+  font-family: "Cabin_Reg";
+  position: absolute;
+  z-index: 2;
+  margin-top: 5px;
+  margin-left: 275px;
+  width: 75px;
+  height: 25px;
+  font-size: 9px;
+
+  opacity: .85;
+  filter:alpha(opacity=85);
+}
+
+#viewer-perspective-reset:hover{
+
+
+  opacity: .75;
+  filter:alpha(opacity=75);
+}
+
+#viewer-perspective-reset:active{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+}
+
+#viewer-reset{
+
+  color: #353839;
+  font-family: "Cabin_Reg";
+  position: absolute;
+  z-index: 2;
+  margin-top: 5px;
+  margin-left: 555px;
+  width: 125px;
+  height: 25px;
+  border-radius: 3px;
+  font-size: 9px;
+
+  opacity: .85;
+  filter:alpha(opacity=85);
+}
+
+#viewer-reset:hover{
+
+  text-decoration: underline;
+
+  opacity: .75;
+  filter:alpha(opacity=75);
+
+}
+
+#viewer-reset:active{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+}
+
+#color-set-red{
+
+  background-color: #E84948;
+
+  margin-left: 275px;
+}
+
+#color-set-red button{
+
+  background-color: #E84948;
+}
+
+#color-set-yellow{
+
+  background-color: #E3D664;
+  
+  margin-left: 285px;
+}
+
+#color-set-yellow button{
+
+  background-color: #E3D664;
+}
+
+#color-set-teal{
+
+  background-color: #00C78C;
+  
+  margin-left: 295px;
+}
+
+#color-set-teal button{
+
+  background-color: #00C78C;
+}
+
+#color-set-blue{
+
+  background-color: #7DB3DC;
+  
+  margin-left: 305px;
+}
+
+#color-set-blue button{
+
+  background-color: #7DB3DC;
+}
+
+#color-set-darkblue{
+
+  background-color: #2E2EFE;
+
+  margin-left: 315px;
+}
+
+#color-set-darkblue button{
+
+  background-color: #2E2EFE;
+}
+
+#color-set-black{
+
+  background-color: #000000;
+
+
+  margin-left: 325px;
+}
+
+#color-set-black button{
+
+  background-color: #000000;
+}
+
+.color-changer-1{
+
+  color: #353839;
+  position: absolute;
+  z-index: 2;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-top: 175px;
+  border-radius: 1px;
+  font-size: 9px;
+}
+
+.color-changer-1 button{
+  
+  border: none;
+  width: 10px;
+  height: 10px;
+}
+
+.color-changer-1:hover{
+
+  opacity: .65;
+  filter:alpha(opacity=65);
+
+}
+
+.color-changer-1:active{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+}
+
+.color-changer-2{
+
+  color: #353839;
+  position: absolute;
+  z-index: 2;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-top: 175px;
+  border-radius: 1px;
+  font-size: 9px;
+}
+
+.color-changer-2 button{
+  
+  border: none;
+  width: 10px;
+  height: 10px;
+}
+
+.color-changer-2:hover{
+
+  opacity: .65;
+  filter:alpha(opacity=65);
+
+}
+
+.color-changer-2:active{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+}
+
+#artist-username a{
+    
+  color: #353839;
+  font-family: "Cabin_Reg";
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 525px;
+  width: 150px;
+  height: 25px;
+  border-radius: 3px;
+
+  opacity: .85;
+  filter:alpha(opacity=85);
+}
+
+
+#artist-username a:hover{
+
+  text-decoration: underline;
+
+  opacity: .75;
+  filter:alpha(opacity=75);
+}
+
+#artist-username a:active{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+}
+
+#return-to-search{
+
+  height: 100px;
+  width: 150px;
+  margin-top: 40px;
+  margin-left: -200px;
+  position: absolute;
+  background:url('../img/tumblr-share.png') top left no-repeat transparent;
+  display:inline-block; 
+  text-indent:-9999px; 
+  overflow:hidden; 
+  border-radius: 3px;
+
+}
+
+#new_comment{
+
+  font-family: "Cabin_Reg";
+  background-color: #FCFCFC;
+  font-size: 15px;
+  outline: none;
+  padding: 10px;
+  position: absolute;
+  margin-left: auto;
+  margin-top: 365px;
+  width: 500px;
+  height: 135px;
+  resize: none; 
+  border-radius: 3px;
+  border:none;
+}
+
+#comment-field{
+
+  position: absolute;
+  width: 500px;
+  margin-top: 525px;
+}
+
+.comment{
+
+  font-family: "Cabin_Reg";
+  font-size: 15px;
+  line-height: 1.75;
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  float: left;
+  width: 500px;
+}
+
+.comment form{
+
+  float: left;
+}
+
+.username{
+
+  opacity: .85;
+  filter:alpha(opacity=85);
+  color: #353839;
+
+}
+
+.username a{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+  color: #353839;
+  font-family: "Cabin_Reg";
+  font-size: 15px;
+  margin-bottom: 5px;
+  
+}
+
+.username a:hover{
+
+  text-decoration: underline;
+  opacity: .75;
+  filter:alpha(opacity=75);
+}
+
+.username a:active{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+}
+
+.twitter-follow-button{
+
+  height: 25px;
+  width: 125px;
+  margin-top: 5px;
+  margin-left: 708px;
+  position: absolute;
+}
+
+.fb-like{
+
+  overflow: hidden;
+  width: 95px;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 710px;
+  position: absolute;
+}
+
+.tumblr-share{
+
+  height: 25px;
+  width: 45px;
+  margin-top: 40px;
+  margin-left: 805px;
+  position: absolute;
+  background:url('../img/tumblr-share.png') top left no-repeat transparent;
+  display:inline-block; 
+  text-indent:-9999px; 
+  overflow:hidden; 
+  width: 45px; 
+  height:20px;
+  border-radius: 3px;
+}
+
+.tumblr-share :hover{
+
+
+  opacity: .75;
+  filter:alpha(opacity=75);
+}
+
+.tumblr-share :active{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+}
+
+/*type versus ones below which are based on their specific name, this is the only plain type submit button on teh page*/
+/*Comment Submit*/
+input[type="submit"]{
+
+  position: absolute;
+  background-image: url('../img/share-button.png');
+  float: left;
+  margin-top: 335px;
+  margin-left: 525px;
+  opacity: 1;
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  border: none;
+}
+
+button[name="smallx"]{
+
+  position: absolute;
+  background-image: url('../img/smallx.png');
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-top: 0px;
+  margin-left: 150px;
+}
+
+button[name="submitlike"]{
+
+  background-color: #393738;
+  border-radius: 2px;
+  position: absolute;
+  background-image: url('../img/LobsterPlus.png');
+  border: none;
+  margin-top: 65px;
+  margin-left: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+button[name="submitdislike"]{
+
+  background-color: #393738;
+  border-radius: 2px;
+  position: absolute;
+  background-image: url('../img/LobsterMinus.png');
+  border: none;
+  margin-top: 95px;
+  margin-left: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+button[name="list_que"]{
+
+  display: inline;
+  font-family: "Lobster_Reg_1.4";
+  font-size: 15px;
+  color: #FFFFFF;
+  background-color: #393738;
+  border: none;
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 150px;
+  height: 25px;
+  border-radius: 3px;
+}

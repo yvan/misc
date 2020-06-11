@@ -1,0 +1,159 @@
+* {
+
+   font-family: Helvetica;
+}
+
+body{
+
+    background-color: #E3E3E1;
+}
+
+a {
+
+
+  text-decoration: none;
+}
+
+.username a {
+
+  color: black;
+}
+
+.error-message{
+
+  display:none;
+}
+#error-message-yvancustom-1{
+
+  color: #D0383A;
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 5px;
+  float: top;
+  margin-left: 825px;
+  float: right;
+  height: 60px; 
+}
+
+#error-message-yvancustom-2{
+
+  color: #D0383A;
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 85px;
+  float: top;
+  margin-left: 825px;
+  float: right;
+  height: 60px; 
+}
+
+#BazarSearch{
+
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 60px;
+  width: 100%;
+  height: 60px; 
+}
+/******** MAIN PAGE *****/
+#page-main {
+
+  z-index: -1;
+  position: absolute;
+  margin-top: 120px;
+  width: 100%;
+  height: 100%;
+
+}
+
+/****NODE FIELD CONTAINS NODES*/
+#node-field{
+
+  width: 1090px;
+  min-height:1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bazar-submits img{
+
+  opacity: 1.0;
+  filter:alpha(opacity=100);
+}
+
+.bazar-submits img:active{
+
+  opacity: .80;
+  filter:alpha(opacity=80);
+}
+
+
+#bazar-return{
+
+  position: absolute;
+  margin-left: 285px;
+  margin-top: 215px;
+  width: 350px;
+  height: 100px;
+}
+
+
+#bazar-return img{
+
+  border-radius: 3px;
+}
+
+#BazarDescription{
+
+  font-family: "Cabin_Reg";
+  background-color: #FCFCFC;
+  font-size: 15px;
+  outline: none;
+  padding: 10px;
+  position: absolute;
+  margin-left: 285px;
+  margin-top: 55px;
+  width: 500px;
+  height: 135px;
+  resize: none; 
+  border-radius: 3px;
+  border:none;
+}
+
+#BazarTitle{
+
+  font-family: "Cabin_Reg";
+  position: absolute;
+  font-size: 15px;
+  width: 500px;
+  height: 25px;
+  margin-left: 285px;
+  margin-top: 5px;
+  padding: 10px;
+  resize: none; 
+  border-radius: 3px;
+  border:none;
+  outline: none;
+}
+
+input[type="submit"]{
+
+  background-image: url('../img/propose.png');
+  float: left;
+  margin-top: 215px;
+  margin-left: 655px;
+  width: 150px;
+  height: 100px;
+  border-radius: 3px;
+  border: none;
+}
+

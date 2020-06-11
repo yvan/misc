@@ -1,0 +1,10 @@
+#Robots.txt file for rasabox
+#Written by teamtrogodor
+
+User-agent: *
+Disallow: /
+
+User-Agent: Googlebot
+Allow: /?q=user
+Allow: /?q=user/register
+Disallow: /

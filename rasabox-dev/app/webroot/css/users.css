@@ -1,0 +1,200 @@
+/***** Temporary signup Page ********/
+/*cakephp-cakephp-0a6d85c*/
+
+
+/****Page & Background*/
+* {
+
+   font-family: Helvetica;
+}
+
+body{
+
+    background-color: #E3E3E1;
+}
+
+.error-message{
+
+  display:none;
+}
+
+#error-message-yvancustom-1{
+
+  color: #D0383A;
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 300px;
+  float: top;
+  margin-left: 75px;
+  float: right;
+  height: 60px; 
+}
+
+#error-message-yvancustom-2{
+
+  color: #D0383A;
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 325px;
+  float: top;
+  margin-left: 75px;
+  float: right;
+  height: 60px; 
+}
+
+#UserSearch{
+
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 60px;
+  width: 100%;
+  height: 60px; 
+}
+
+#page-main {
+
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+}
+
+#UserUsername{
+  
+  z-index: -1;
+  display: inline;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 70px;
+  font-size: 50px;
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  resize: none; 
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+#UserPassword{
+
+  z-index: -1;
+  display: inline;
+  position: absolute;
+  margin-top: 225px;
+  margin-left: 70px;
+  font-size: 50px;
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  resize: none; 
+  border-radius: 3px;
+  border: none;
+  outline: none;
+
+}
+
+#UserCode{
+
+  z-index: -1;
+  display: inline;
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 70px;
+  font-size: 50px;
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  resize: none; 
+  border-radius: 3px;
+  border:none;
+  outline: none;
+}
+
+#add-user{
+
+  position: absolute;
+  display: inline;
+  float: left;
+  margin-top: 195px;
+  margin-left: 10px;
+  width:150px;
+  height: 86px;
+
+}
+
+#add-user img{
+
+  border-radius: 3px;
+}
+
+#return-to-login{
+
+  position: absolute;
+  display: inline;
+  float: left;
+  margin-top: 195px;
+  margin-left: 10px;
+  width:150px;
+  height: 86px;
+
+}
+
+#return-to-login img{
+
+  border-radius: 3px;
+}
+
+.submit{
+
+  display: inline;
+  float: left;
+  margin-top: 195px;
+  margin-left: 500px;
+  width:150px;
+  height:  86px;
+}
+
+/*dialogue 1 and dialogue 2 are the same one just has a minimum left margin that differs*/
+/*dialogue 1 for login page dialogue 2 for add user*/
+#login-dialogue-1{
+
+  font-family: "Cabin_Reg";
+  color: black;
+  display: inline;
+  float: left;
+  margin-top: 195px;
+  margin-left: 175px;
+  width: 275px;
+  height:  86px;
+}
+
+#login-dialogue-2{
+
+  font-family: "Cabin_Reg";
+  color: black;
+  display: inline;
+  float: left;
+  margin-top: 195px;
+  margin-left: 175px;
+  width: 275px;
+  height:  86px;
+}
+
+input[type="submit"]{
+
+  background-image: url('../img/submit-confirm.png');
+  border: none;
+  width: 150px;
+  height: 100px;
+  border-radius: 3px;
+}

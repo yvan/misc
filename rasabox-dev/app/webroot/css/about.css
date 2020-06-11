@@ -1,0 +1,86 @@
+* {
+
+   font-family: Helvetica;
+}
+
+body{
+
+    background-color: #E3E3E1;
+}
+
+a {
+
+
+  text-decoration: none;
+}
+
+.username a {
+
+  color: black;
+}
+
+#text{
+
+  margin-top: 15px;
+  color: #393738;
+  height: 1300px;
+  width: 900px;
+  font-size: 25px;
+}
+
+#text p {
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Cabin_Reg";
+}
+
+#text p strong{
+
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 27px;
+  font-family: "Cabin_Reg";
+}
+
+#AboutSearch{
+
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 60px;
+  width: 100%;
+  height: 60px; 
+}
+
+/******** MAIN PAGE *****/
+#page-main {
+
+  z-index: -1;
+  position: absolute;
+  margin-top: 120px;
+  width: 100%;
+  height: 100%;
+
+}
+
+/****NODE FIELD CONTAINS NODES*/
+#node-field{
+
+  width: 1090px;
+  min-height:1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*#what{
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 1300px;
+  width: 900px;
+  background-image: url('../img/about-page.png');
+}*/

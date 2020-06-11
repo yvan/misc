@@ -1,0 +1,208 @@
+/***** Main Page ********/
+/*DO NOT USE: id - header CHECK IF THE ID ID BEING USED BY THE LAYOUT FILE;*/
+/*cakephp-cakephp-0a6d85c*/
+
+* {
+
+   font-family: Helvetica;
+}
+
+body{
+
+    background-color: #E3E3E1;
+}
+
+textarea{
+
+    width: 400px;
+    height: 250px;
+    resize: none;
+}
+
+p{
+
+  color: black;
+}
+
+.error-message{
+
+  display:none;
+}
+
+.error-message-yvancustom{
+
+  color: #D0383A;
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 575px;
+  float: top;
+  float: right;
+  height: 60px; 
+  width: 300px;
+}
+#error-message-yvancustom-1{
+
+  margin-top: 150px;
+}
+
+#error-message-yvancustom-2{
+
+  margin-top: 250px;  
+}
+
+#error-message-yvancustom-3{
+
+  margin-top: 350px;
+}
+
+#error-message-yvancustom-4{
+
+  margin-top: 450px;
+
+}
+
+#UploadSearch{
+
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 60px;
+  width: 100%;
+  height: 60px; 
+}
+
+/******** MAIN PAGE *****/
+#page-main {
+
+  position: absolute;
+  z-index: -1;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/****NODE FIELD CONTAINS NODES*/
+#node-field{
+
+  width: 1090px;
+  min-height:1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Other fields*/
+#UploadDescription{
+
+  font-family: "Cabin_Reg";
+  font-size: 15px;
+  position: absolute;
+  margin-top: 50px;
+  padding: 10px;
+  margin-left: 25px;
+  border-radius: 3px;
+  width: 505px;
+  border:none;
+  outline: none;
+}
+
+#UploadTitle{
+
+  font-family: "Cabin_Reg";
+  font-size: 15px;
+  position: absolute;
+  width: 505px;
+  height: 25px;
+  margin-left: 25px;
+  padding: 10px;
+  resize: none; 
+  border-radius: 3px;
+  border:none;
+  outline: none;
+}
+
+/***File Field **/
+
+.submitpicture{
+
+  position: absolute;
+  font-family: "Cabin_Reg";
+  font-size: 15px;
+  /*background-image: url('../img/upload-image.png');*/
+  border-radius: 3px;
+  margin-left: 600px;
+  margin-top: 100px;
+  color:#393738;
+}
+
+#UploadSubmittedpicture{
+
+	opacity: 1.0;
+  outline: none;
+}
+
+.submitmodel{
+
+  position: absolute;
+  font-family: "Cabin_Reg";
+  font-size: 15px;
+  /*background-image: url('../img/upload-file.png');*/
+  border-radius: 3px;
+  margin-left: 600px;
+  color:#393738;
+}
+
+.submitlicense{
+
+  position: absolute;
+  font-family: "Cabin_Reg";
+  font-size: 15px;
+  border-radius: 3px;
+  margin-left: 600px;
+  margin-top: 200px;
+  color:#393738;
+}
+
+#UploadSubmittedmodelfile{
+
+  opacity: 1.0;
+  outline: none;
+}
+
+#upload-return{
+
+  position: absolute;
+  margin-left: 185px;
+  margin-top: 325px;
+  width: 350px;
+  height: 86px;
+}
+
+#upload-return img{
+
+  border-radius: 3px;
+}
+
+/**submit Button**/
+.submit{
+
+  display: inline;
+  position: absolute;
+  margin-top: 325px;
+  margin-left: 25px;
+  width: 150px;
+  height: 86px;
+}
+
+input[type="submit"]{
+
+  background-image: url('../img/submit-confirm.png');
+  border: none;
+  width: 150px;
+  height: 100px;
+  border-radius: 3px;
+}

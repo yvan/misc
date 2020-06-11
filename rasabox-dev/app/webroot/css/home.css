@@ -1,0 +1,118 @@
+/***** Temporary signup Page ********/
+/*cakephp-cakephp-0a6d85c*/
+
+
+/****Page & Background*/
+* {
+
+   font-family: Helvetica;
+}
+
+body{
+
+    background-color: #000000;
+}
+
+#HomeSearch{
+
+  font-family: "Cabin_Reg";
+  position: absolute;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 60px;
+  width: 100%;
+  height: 60px; 
+}
+
+#page-main {
+
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+}
+
+#logo-big {
+
+  z-index: -1;
+  background-image: url('../img/rasaboxlogo-signup.png');
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 335px;
+  width: 347px;
+  height: 70px;
+}
+
+#background {
+
+  z-index: -1;
+  background-image: url('../img/stripped-signup.png');
+  background-color: #000000;
+  position: absolute;
+  margin-top: 250px;
+  width:1024px;
+  height: 150px;
+  z-index: -1;
+}
+
+
+/*Content Section*/
+#about-image{
+
+  z-index: -1;
+  position: absolute;
+  background-image: url('../img/about.png'); 
+  margin-top: 500px;
+  margin-left: 75px;
+  width: 900px;
+  height: 700px;
+}
+
+#splash {
+
+  z-index: -1;
+  position: absolute;
+  background-image: url('../img/landing-page-box.png'); 
+  margin-top: 1100px;
+  margin-left: 0px;
+  width: 900px;
+  height: 400px;
+}
+
+#HomeEmail{
+
+  font-family: "Cabin_Reg";
+  z-index: -1;
+  display: inline;
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 100px;
+  font-size: 50px;
+  width: 700px;
+  height: 86px;
+  padding-left: 10px;
+  resize: none; 
+  border-radius: 3px;
+  border:none;
+  outline: none;
+}
+
+.submit{
+
+  display: inline;
+  float: left;
+  margin-top: 400px;
+  margin-left: 815px;
+  width:150px;
+  height: 86px;
+}
+
+input[type="submit"]{
+ 
+  background-image: url('../img/submit.png');
+  border: none;
+  width:150px;
+  height: 86px;
+  border-radius: 3px;
+}

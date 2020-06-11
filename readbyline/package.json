@@ -1,0 +1,28 @@
+{
+  "name": "readbyline",
+  "version": "0.0.5",
+  "description": "read a file line by line and do it really fast",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "read",
+    "line",
+    "by",
+    "line",
+    "file",
+    "delimiter",
+    "parse"
+  ],
+  "author": "yvanscher",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvan/readbyline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yvan/readbyline/issues"
+  },
+  "homepage": "https://github.com/yvan/readbyline#readme"
+}

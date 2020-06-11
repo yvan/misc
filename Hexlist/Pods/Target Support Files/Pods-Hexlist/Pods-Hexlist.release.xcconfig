@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ChameleonFramework" "${PODS_ROOT}/Headers/Public/Google-API-Client" "${PODS_ROOT}/Headers/Public/JSONModel" "${PODS_ROOT}/Headers/Public/Realm" "${PODS_ROOT}/Headers/Public/box-ios-sdk" "${PODS_ROOT}/Headers/Public/gtm-http-fetcher" "${PODS_ROOT}/Headers/Public/gtm-oauth2"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Realm/core"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ChameleonFramework" -isystem "${PODS_ROOT}/Headers/Public/Google-API-Client" -isystem "${PODS_ROOT}/Headers/Public/JSONModel" -isystem "${PODS_ROOT}/Headers/Public/Realm" -isystem "${PODS_ROOT}/Headers/Public/box-ios-sdk" -isystem "${PODS_ROOT}/Headers/Public/gtm-http-fetcher" -isystem "${PODS_ROOT}/Headers/Public/gtm-oauth2"
+OTHER_LDFLAGS = $(inherited) -ObjC -all_load -l"ChameleonFramework" -l"Google-API-Client" -l"JSONModel" -l"Pods-Hexlist-Realm" -l"box-ios-sdk" -l"c++" -l"gtm-http-fetcher" -l"gtm-oauth2" -l"realm-ios" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}/Pods
