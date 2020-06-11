@@ -1,0 +1,27 @@
+{
+  "name": "bebopapi",
+  "version": "0.0.1",
+  "description": "An api for cowboy bebop quotes, It's sunday",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "cowboy",
+    "bebop",
+    "api"
+  ],
+  "engines" : { 
+    "node" : "0.11.16", 
+    "npm": "2.3.0"
+  },
+  "author": "yvanscher",
+  "license": "MIT",
+  "dependencies": {
+    "co-monk": "^1.0.0",
+    "koa": "^0.18.1",
+    "koa-logger": "^1.2.2",
+    "koa-router": "^4.3.2",
+    "monk": "^1.0.1"
+  }
+}

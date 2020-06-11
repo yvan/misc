@@ -1,0 +1,39 @@
+{
+  "name": "cryostore",
+  "version": "0.0.8",
+  "description": "Turns your javascript code into JSON and stores it.",
+  "main": "client.js",
+  "dependencies": {
+    "minimist": "^1.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.11",
+    "nodeunit": "^0.9.0"
+  },
+  "scripts": {
+    "test": "cryotest"
+  },
+  "bin":{
+    "cryostore": "client.js",
+    "cryo": "client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yvanscher/cryostore.git"
+  },
+  "keywords": [
+    "pickle",
+    "serialize",
+    "store",
+    "cryo",
+    "json",
+    "javascript",
+    "convert"
+  ],
+  "author": "yvanscher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yvanscher/cryostore/issues"
+  },
+  "homepage": "https://github.com/yvanscher/cryostore"
+}

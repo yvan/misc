@@ -1,0 +1,26 @@
+{
+  "name":"netspeed",
+  "author":"yvanscher",
+  "description":"get internet speeds from latitute/longitude or placename",
+  "version":"0.0.7",
+  "main":"fetch.js",
+  "dependencies":{
+    "geographer":"^0.0.5",
+    "request":"^2.33.0"
+  },
+  "repository":{
+    "type":"git",
+    "url": "git://github.com/yvanscher/netspeed.git"
+  },
+   "keywords":[
+     "internet",
+     "broadband",
+     "FCC",
+     "api",
+     "connection",
+     "speed",
+     "network",
+     "places",
+     "coordinates"
+   ]
+}
