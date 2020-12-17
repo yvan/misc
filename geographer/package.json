@@ -1,0 +1,32 @@
+{
+  "name":"geographer",
+  "author":"yvanscher",
+  "description":"get terrain data for a set of latitude/longitude coordinates or location name",
+  "version":"0.0.5",
+  "main": "fetch.js",
+  "dependencies":{
+    "commander":"^1.0.0",
+    "request": "^2.33.0",
+    "async":"^1.0.0"
+  },
+  "bin":{
+    "geographer":"client.js",
+    "geo":"client.js"
+  },
+  "repository":{
+    "type":"git",
+    "url":"git://github.com/yvanscher/geographer.git"
+  },
+   "keywords":[
+     "coordinates",
+     "geospatial",
+     "geography",
+     "elevation",
+     "geonames",
+     "regions",
+     "terrain",
+     "places",
+     "geode",
+     "api"
+   ]
+}
