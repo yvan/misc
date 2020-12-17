@@ -1,0 +1,55 @@
+(ql:quickload :rutils)
+(in-package :rtl-user)
+(named-readtables:in-readtable rutils-readtable)
+
+(defparameter *puzzle-input* '(231832 767346))
+
+(defun int-to-lst (input)
+  (map 'list 'digit-char-p (write-to-string input)))
+
+(defun check-6-digits (input)
+  (eql (length (write-to-string input)) 6))
+
+(defun check-digits-inc (input)
+  (if (integerp input)
+      (:= input (int-to-lst input)))
+  (if (null (cdr input))
+      t
+      (if (consp input)
+	  (cond ((<= (car input) (cadr input))
+		 (check-digits-inc (cdr input)))
+		(t nil)))))
+
+(defun check-2-adj-digits (input)
+  (if (integerp input)
+      (:= input (int-to-lst input)))
+  (if (consp input)
+      (cond ((= (car input) (cadr input)) t)
+	    (t (check-2-adj-digits (cdr input))))))
+
+(defun pt2-criteria (run)
+  (or (= (cdr run) 2)))
+
+(defun check-2-adj-accum (input &optional runs prev (prevcount 0))
+  (if (integerp input)
+      (:= input (int-to-lst input)))
+  (if (not (consp input))
+      (some #'(lambda (x) x)
+	     (loop for run in (cons (cons prev prevcount) runs)
+		collect (pt2-criteria run)))
+      (if (or (null prev) (= (car input) prev))
+	  (check-2-adj-accum (cdr input)
+			     runs
+			     (car input)
+			     (1+ prevcount))
+	  (check-2-adj-accum (cdr input)
+			     (cons (cons prev prevcount) runs)
+			     (car input)
+			     1))))
+
+(defun find-pswd-candidates (pzl-input)
+  (length (remove 'nil (loop for test-input from (car pzl-input) to (cadr pzl-input)
+			   collect (if (and (check-6-digits test-input)
+					    (check-2-adj-accum test-input)
+					    (check-digits-inc test-input))
+				       test-input)))))
