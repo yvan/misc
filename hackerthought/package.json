@@ -10,7 +10,7 @@
     "async":"^1.0.0",
     "commander":"1.0.0",
     "cli-color":"^1.0.0",
-    "open":"^0.0.5"
+    "open":"^7.0.4"
   },
   "bin":{
     "hackerthought": "client.js"
